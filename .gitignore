@@ -1,2 +1,3 @@
 # Ignore model files due to their huge size
 models/xlm_roberta/model.safetensors
+output/*
