@@ -1,15 +1,15 @@
 # Security of Large Language Models (LLM) - Prompt Injection Classification
-In this project, we investigates the security of large language models in terms of [prompt injection attacks](https://www.techopedia.com/definition/prompt-injection-attack). Primarily, we perform binary classification of a dataset of input prompts in order to discover malicious prompts that represent injections.
+In this project, we investigate the security of large language models in terms of [prompt injection attacks](https://www.techopedia.com/definition/prompt-injection-attack). Primarily, we perform binary classification of a dataset of input prompts in order to discover malicious prompts that represent injections.
 
-In short: prompt injections aim at manipulating the LLM using crafted input prompts to steer the model into ignoring previous instructions and, thus, perform unintended actions.
+*In short: prompt injections aim at manipulating the LLM using crafted input prompts to steer the model into ignoring previous instructions and, thus, performing unintended actions.*
 
 To do so, we analyzed several AI-driven mechanisms to do the classification task, we particularly examined 1) classical ML algorithms, 2) a pre-trained LLM model, and 3) a fine-tuned LLM model.
 
 
 ## Data Set (Deepset Prompt Injection Dataset)
-The dataset used in this demo is: [Prompt Injection Dataset](https://huggingface.co/datasets/deepset/prompt-injections) provided by [Deepset](https://www.deepset.ai/), an AI company specialized in offering tools to build NLP-driven applications using LLMs. <br/>
+The dataset used in this demo is: [Prompt Injection Dataset](https://huggingface.co/datasets/deepset/prompt-injections) provided by [deepset](https://www.deepset.ai/), an AI company specialized in offering tools to build NLP-driven applications using LLMs. <br/>
 - The dataset combines hundreds of samples of both normal and manipulated prompts labeled as injections.
-- It contains prompts mainly in English, along with some other prompts translated to other languages, primarily German.
+- It contains prompts mainly in English, along with some other prompts translated into other languages, primarily German.
 - The original data set is already split into training and holdout subsets. We maintained this split across the multiple experiments to compare results using a unified testing benchmark.
 
 
